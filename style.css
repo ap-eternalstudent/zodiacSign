@@ -9,7 +9,11 @@ body {
   background-color: rgb(1, 1, 44);
   color: aliceblue;
 }
-
+h1 {
+  font-size: 3rem;
+  padding-top: 3rem;
+  text-align: center;
+}
 section {
   padding: 5rem;
   display: absolute;
@@ -43,7 +47,7 @@ button {
   font-weight: bold;
   color: #fff;
   text-decoration: none;
-  background-color: #429000;
+  background-color: #003162;
   padding: 10px 5px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -51,7 +55,7 @@ button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: 5px solid #429000;
+  border: 5px solid #3e4bbc;
   box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -64,11 +68,15 @@ button:active {
 
 button:hover {
   background-color: #fff;
-  color: #429000;
+  color: #664fe7;
   font-weight: bold;
 }
 
 p {
   text-align: center;
   font-size: 3rem;
+}
+
+.description {
+  padding-bottom: 2rem;
 }

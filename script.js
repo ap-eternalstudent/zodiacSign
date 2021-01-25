@@ -41,40 +41,40 @@ const displayZodiacSign = function () {
 const dateRange = function () {
   switch (birthDateMenu.value) {
     case birthDateArray[0]:
-      zodiacSign = "aries";
+      zodiacSign = "Aries";
       break;
     case birthDateArray[1]:
-      zodiacSign = "taurus";
+      zodiacSign = "Taurus";
       break;
     case birthDateArray[2]:
-      zodiacSign = "gemini";
+      zodiacSign = "Gemini";
       break;
     case birthDateArray[3]:
-      zodiacSign = "cancer";
+      zodiacSign = "Cancer";
       break;
     case birthDateArray[4]:
-      zodiacSign = "leo";
+      zodiacSign = "Leo";
       break;
     case birthDateArray[5]:
-      zodiacSign = "virgo";
+      zodiacSign = "Virgo";
       break;
     case birthDateArray[6]:
-      zodiacSign = "libra";
+      zodiacSign = "Libra";
       break;
     case birthDateArray[7]:
-      zodiacSign = "scorpio";
+      zodiacSign = "Scorpio";
       break;
     case birthDateArray[8]:
-      zodiacSign = "sagittarius";
+      zodiacSign = "Sagittarius";
       break;
     case birthDateArray[9]:
-      zodiacSign = "capricorn";
+      zodiacSign = "Capricorn";
       break;
     case birthDateArray[10]:
-      zodiacSign = "aquarius";
+      zodiacSign = "Aquarius";
       break;
     case birthDateArray[11]:
-      zodiacSign = "pisces";
+      zodiacSign = "Pisces";
       break;
   }
   displayZodiacSign();
