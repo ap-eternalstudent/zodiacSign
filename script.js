@@ -3,73 +3,19 @@ const birthDateMenu = document.getElementById("dateMenu");
 let dateInput = "";
 let zodiacSign = "";
 
-const displayZodiacSign = function () {
-  let paragraph = document.createElement("p");
-  let node = document.createTextNode(
-    `Congratulations! Your zodiac sign is ${zodiacSign}`
-  );
-  paragraph.appendChild(node);
-  let webPageBody = document.querySelector("body");
-  webPageBody.appendChild(paragraph);
-};
-
-const dateRange = function () {
-  dateRangeValue = birthDateMenu.value;
-  switch (dateRangeValue) {
-    case "march":
-      zodiacSign = "aries";
-      break;
-    case "april":
-      zodiacSign = "taurus";
-      break;
-    case "may":
-      zodiacSign = "gemini";
-      break;
-    case "june":
-      zodiacSign = "cancer";
-      break;
-    case "july":
-      zodiacSign = "leo";
-      break;
-    case "august":
-      zodiacSign = "virgo";
-      break;
-    case "september":
-      zodiacSign = "libra";
-      break;
-    case "october":
-      zodiacSign = "scorpio";
-      break;
-    case "november":
-      zodiacSign = "sagittarius";
-      break;
-    case "december":
-      zodiacSign = "capricorn";
-      break;
-    case "january":
-      zodiacSign = "aquarius";
-      break;
-    case "february":
-      zodiacSign = "pisces";
-      break;
-  }
-  displayZodiacSign();
-};
-
-btnCheck.addEventListener("click", dateRange);
 const birthDateArray = [
-  "march",
-  "april",
-  "may",
-  "june",
-  "july",
-  "august",
-  "september",
-  "october",
-  "november",
-  "december",
-  "january",
-  "february",
+  "March 21 - April 19",
+  "April 20 - May 20",
+  "May 21 - June 20",
+  "June 21 - July 22",
+  "July 23 - August 22",
+  "August 23 - September 22",
+  "September 23 - October 22",
+  "October 23 - November 21",
+  "November 22 - December 21",
+  "December 22 - January 19",
+  "January 20 - February 18",
+  "February 19 - March 20",
 ];
 
 const populateMenu = function () {
@@ -81,8 +27,61 @@ const populateMenu = function () {
     birthDateMenu.appendChild(birthDate);
   }
 };
-populateMenu();
 
+const displayZodiacSign = function () {
+  let paragraph = document.createElement("p");
+  let node = document.createTextNode(
+    `Congratulations! Your zodiac sign is ${zodiacSign}`
+  );
+  paragraph.appendChild(node);
+  let webPageBody = document.querySelector("body");
+  webPageBody.appendChild(paragraph);
+};
+
+const dateRange = function () {
+  switch (birthDateMenu.value) {
+    case birthDateArray[0]:
+      zodiacSign = "aries";
+      break;
+    case birthDateArray[1]:
+      zodiacSign = "taurus";
+      break;
+    case birthDateArray[2]:
+      zodiacSign = "gemini";
+      break;
+    case birthDateArray[3]:
+      zodiacSign = "cancer";
+      break;
+    case birthDateArray[4]:
+      zodiacSign = "leo";
+      break;
+    case birthDateArray[5]:
+      zodiacSign = "virgo";
+      break;
+    case birthDateArray[6]:
+      zodiacSign = "libra";
+      break;
+    case birthDateArray[7]:
+      zodiacSign = "scorpio";
+      break;
+    case birthDateArray[8]:
+      zodiacSign = "sagittarius";
+      break;
+    case birthDateArray[9]:
+      zodiacSign = "capricorn";
+      break;
+    case birthDateArray[10]:
+      zodiacSign = "aquarius";
+      break;
+    case birthDateArray[11]:
+      zodiacSign = "pisces";
+      break;
+  }
+  displayZodiacSign();
+};
+
+populateMenu();
+btnCheck.addEventListener("click", dateRange);
 // if else
 
 // object
