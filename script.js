@@ -5,7 +5,9 @@ let zodiacSign = "";
 
 const displayZodiacSign = function () {
   let paragraph = document.createElement("p");
-  let node = document.createTextNode(`Congratulations! You are ${zodiacSign}`);
+  let node = document.createTextNode(
+    `Congratulations! Your zodiac sign is ${zodiacSign}`
+  );
   paragraph.appendChild(node);
   let webPageBody = document.querySelector("body");
   webPageBody.appendChild(paragraph);
@@ -51,6 +53,7 @@ const dateRange = function () {
       zodiacSign = "pisces";
       break;
   }
+  displayZodiacSign();
 };
 
 btnCheck.addEventListener("click", dateRange);
